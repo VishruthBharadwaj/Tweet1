@@ -23,8 +23,6 @@ def easy():
 
     tags = tagb.split(sep=",")
         
-    #data=input('What u want to search inside database table: ')
-        
 
 
     class StreamListener(tweepy.StreamListener):
@@ -40,14 +38,11 @@ def easy():
             followers = status.user.followers_count
             description = status.user.description
             text_ = status.text
+            
             #Connected to mysql DB using conf file
             con = mysql.connector.connect(option_files='my.conf')
 
             cursor = con.cursor(buffered=True)
-            #query = """INSERT INTO synctactic (name, created, loc, coords, followers, description, text_) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
-            
-
-            #Connecting to mysql query  from tweetquery.sql
             fd = open('tweetquery.sql', 'r')
             sqlFile = fd.read()
             fd.close()
@@ -59,13 +54,6 @@ def easy():
             for command in sqlCommands:
                 cursor.execute(command, (name, created, loc, coords, followers, description, text_))
     
-
-            #cursor.execute(query, (name, created, loc, coords, followers, description, text_))
-
-
-            #tablesearch_query =f"INSERT INTO trend_data (timesec, counts) SELECT created , count('{data}') from twitterdata group by created"
-           
-            #cursor.execute(tablesearch_query)
             try:
                 con.commit()
 
