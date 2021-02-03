@@ -16,7 +16,7 @@ d)twitterkeys.py - Please mention your API keys here.
 
 # Please install pandas,tweepy
 
-# Run the Script using Comman "Python Twitter.py"
+Run the Script using command "Python Twitter.py"
 
 output of cmdprmt will be :
 # Enter the word you want search in twitter: 
