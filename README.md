@@ -19,7 +19,10 @@ d)twitterkeys.py - Please mention your API keys here.
 Run the Script using command "Python Twitter.py"
 
 output of cmdprmt will be :
-# Enter the word you want search in twitter: 
+
+Enter the word you want search in twitter: 
+
 Please enter : #modi or farmers etc..
 
-# Id of Live stream data gets printed and data will be stored in SQL DB
+
+Id of Live stream data gets printed and data will be stored in SQL DB.
