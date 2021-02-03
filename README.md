@@ -4,11 +4,11 @@
 We have 4 files here :
 
 
-a)my.conf file- It is for Local repo configuration of MysqlDB.
+a)my.conf file- It contains configuration of MysqlDB.
 
 b)Tweet.py - It is main script.
 
-c)tweetquery.sql - SQL command Script.
+c)tweetquery.sql - SQL command to scrape and store data in table mentioned in main Script.
 
 d)twitterkeys.py - Please mention your API keys here.
 
