@@ -1,0 +1,1 @@
+INSERT INTO synctactic (name, created, loc, coords, followers, description, text_) VALUES (%s, %s, %s, %s, %s, %s, %s);
